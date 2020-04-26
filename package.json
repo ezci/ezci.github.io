@@ -1,0 +1,25 @@
+{
+  "name": "name-generator",
+  "version": "1.0.0",
+  "description": "generate made-up real-like names specifically for web domains",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "debug": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emrhzc/name-generator.git"
+  },
+  "dev-dependencies": {
+    "express": "4.17.1",
+    "nodemon": "*"
+  },
+  "author": "emrhzc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emrhzc/name-generator/issues"
+  },
+  "homepage": "https://github.com/emrhzc/name-generator#readme"
+}

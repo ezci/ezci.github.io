@@ -1,0 +1,95 @@
+body{
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=);
+  margin:20px auto;
+}
+div{
+  margin:5px 10px;
+}
+.topc div{
+  vertical-align: top;
+  display:inline-block;
+}
+
+.container>div, .experience>div{
+  vertical-align: top;
+  margin:0 10px;
+  display:inline-block;
+}
+
+.container {
+  background: #fbfbfb;
+  z-index: 10;
+  border: 1px solid lightgrey;
+}
+
+.leftc {
+  text-align: center;
+  width: 150px;
+}
+
+.middlec {
+  width: 850px;
+}
+
+.ex-company {
+  width: 200px;
+}
+
+.p-img {
+  width: 100px;
+}
+
+.description>small {
+  margin-left: 20px;
+  display: inline-block;
+  line-height: 20px;
+}
+
+.links>a>img{
+  width:20px;
+}
+
+.ex-date>em {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.ex-date {
+  width: 200px;
+}
+
+.leftc>div {
+  margin: 20px auto;
+}
+
+h4 {
+  margin: 20px 0;
+}
+
+.navigation span {
+  border-bottom: 1px solid lightgrey;
+  margin: 10px;
+}
+
+.navigation{
+  text-align: right;
+  margin-left: 28px;
+  cursor:pointer;
+}
+
+.middlec>div:not(:first-child) {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 20px;
+}
+
+li {
+  margin: 0;
+}
+
+.project em:hover {
+  text-decoration: underline;
+  cursor: default;
+}

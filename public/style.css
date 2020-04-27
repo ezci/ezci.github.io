@@ -10,7 +10,7 @@ div{
   display:inline-block;
 }
 
-.container>div, .experience>div{
+.container>div, .experience>span, .education>span{
   vertical-align: top;
   margin:0 10px;
   display:inline-block;
@@ -31,7 +31,7 @@ div{
   width: 850px;
 }
 
-.ex-company {
+.block1 {
   width: 200px;
 }
 
@@ -66,21 +66,22 @@ div{
 }
 
 h4 {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
-.navigation span {
+.navigation>span, .download>span {
   border-bottom: 1px solid lightgrey;
   margin: 10px;
-}
-
-.navigation{
-  text-align: right;
-  margin-left: 28px;
   cursor:pointer;
 }
 
-.middlec>div:not(:first-child) {
+div.navigation{
+  display:block;
+  text-align: right;
+  margin: 10px;
+}
+
+.middlec>div {
   border-bottom: 1px solid lightgrey;
   padding-bottom: 20px;
 }
@@ -92,4 +93,13 @@ li {
 .project em:hover {
   text-decoration: underline;
   cursor: default;
+}
+
+small {
+  margin-right: 20px;
+}
+
+div#skills ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

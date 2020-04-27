@@ -12,9 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/emrhzc/name-generator.git"
   },
-  "dev-dependencies": {
-    "express": "4.17.1",
-    "nodemon": "*"
+  "dependencies": {
+    "express": "4.17.1"
   },
   "author": "emrhzc",
   "license": "ISC",

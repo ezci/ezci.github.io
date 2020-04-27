@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css"/>
+  <link rel="stylesheet" type="text/css" href="public/milligram.min.css"/>
+  <script src="public/jspdf.min.js"></script>
+  <script src="public/html2canvas.min.js"></script>
   <link rel="stylesheet" type="text/css" href="public/style.css"/>  
 </head>
 <body>
     <div class="container">
+          <div class="navigation" id="navigation">
+            <span href="experiences">Work Experience</span>
+            <span href="projects">Projects</span>
+            <span href="educations">Education</span>
+            <span href="certifications">Certifications</span>
+            <span href="skills">Skills</span>
+            <span href="p-projects">Personal Projects</span>
+        </div>
           <div class="leftc">
             <div class="p-img">
                 <img src="public/coding.png" alt="Avatar">
@@ -17,16 +27,11 @@
               <a href="https://github.com/emrhzc"><img src="public/github.png" /></a>
               <a href="https://stackoverflow.com/users/1123532/emrhzc"><img src="public/so.png" /></a>
             </div>
+            <div class="download">
+              <span>download pdf</span>
+            </div>
           </div>
           <div class="middlec">
-              <div class="navigation" id="navigation">
-                  <span href="experiences">Work Experience</span>
-                  <span href="projects">Projects</span>
-                  <span href="educations">Education</span>
-                  <span href="certifications">Certifications</span>
-                  <span href="skills">Skills</span>
-                  <span href="p-projects">Personal Projects</span>
-              </div>
             <div class="description">
               <h4>Emrah Izci</h4>
               <small>Software engineer, consultant and trainer. Experienced in Spring Framework, React, Angular, Banking Automation, Internet Banking, Internet of Things, Desktop UI/UX Development, Test Automation and Datawarehousing</small>
@@ -34,59 +39,128 @@
             <div id="experiences">
               <h4>Work Experience</h4>
               <div class="experience">
-                  <div class="ex-company">
+                  <span class="block1">
                     <strong>Cimsolutions B.V.</strong>
-                    </div>
-                  <div class="ex-date">
+                  </span>
+                  <span class="ex-date">
                     <em>Oct 2017 - Feb 2020</em>
-                    </div>
-                  <div class="ex-title">
+                    </span>
+                  <span class="ex-title">
                     <small>Development Consultant</small>
-                  </div>
+                  </span>
               </div>
              <div class="experience">
-                  <div class="ex-company">
+                  <span class="block1">
                     <strong>Woonveilig B.V.</strong>
-                    </div>
-                  <div class="ex-date">
+                   </span>
+                  <span class="ex-date">
                     <em>Nov 2016 - Oct 2017</em>
-                    </div>
-                  <div class="ex-title">
+                  </span>
+                  <span class="ex-title">
                     <small>Java/IoT Developer</small>
-                  </div>
+                  </span>
               </div>
               <div class="experience">
-                  <div class="ex-company">
+                  <span class="block1">
                     <strong>OBSS</strong>
-                    </div>
-                  <div class="ex-date">
+                    </span>
+                  <span class="ex-date">
                     <em>Sept 2014 - Sept 2016 </em>
-                    </div>
-                  <div class="ex-title">
+                  </span>
+                  <span class="ex-title">
                     <small>Development Consultant</small>
-                  </div>
+                  </span>
               </div>
               <div class="experience">
-                  <div class="ex-company">
+                  <span class="block1">
                     <strong>Turkcell Technology</strong>
-                    </div>
-                  <div class="ex-date">
+                  </span>
+                  <span class="ex-date">
                     <em>July 2013 - Sept 2014</em>
-                    </div>
-                  <div class="ex-title">
+                    </span>
+                  <span class="ex-title">
                     <small>DWH/Backend Developer</small>
-                  </div>
+                  </span>
               </div>
               <div class="experience">
-                  <div class="ex-company">
+                  <span class="block1">
                     <strong>Bogazici University</strong>
-                    </div>
-                  <div class="ex-date">
+                    </span>
+                  <span class="ex-date">
                     <em>Jan 2013 - May 2013</em>
-                    </div>
-                  <div class="ex-title">
+                  </span>
+                  <span class="ex-title">
                     <small>Web Developer</small>
-                  </div>
+                  </span>
+              </div>
+            </div>
+            <div id="educations">
+              <h4>Education</h4>
+              <div class="education">
+                <span class="block1">
+                  <strong>Bogazici University</strong>
+                </span>
+                <span class="ex-date">
+                  <em>Jan 2016 - Unfinished</em>
+                </span>
+                <medium>Computer Engineering M.Sc.</medium>
+              </div>
+              <div class="education">
+                <span class="block1">
+                  <strong>Bogazici University</strong>
+                </span>
+                <span class="ex-date">
+                  <em>Sept 2010 - Jun 2014</em>
+                </span>
+                <medium>Computer Engineering B.Sc.</medium>
+              </div>
+              <div class="education">
+                <span class="block1">
+                  <strong>Bogazici University</strong>
+                </span>
+                <span class="ex-date">
+                  <em>Sept 2009 - June 2010</em>
+                </span>
+                <medium>English Prep School</medium>
+              </div>
+            </div>            
+            <div id="certifications" class="Certifications & Trainings">
+              <h4>Certifications</h4>
+              <div class="certification">
+                <span>Oracle Certified Professional</span>
+                <strong> @ Oracle</strong>
+              </div>
+              <div class="certification">
+                <span>Oracle Certified Associate</span>
+                <strong> @ Oracle</strong>
+              </div>
+              <div class="certification">
+                <span>Professional Scrum Master</span>
+                <strong> @ scrum.org</strong>
+              </div>
+              <div class="certification">
+                <span>ISTQB Certified Tester</span>
+                <strong> @ ISTQB</strong>
+              </div>
+              <div class="certification">
+                <span>Getting Started With Google Kubernetes</span>
+                <strong> @ Coursera</strong>
+              </div>
+              <div class="certification">
+                <span>Continuous Integration</span>
+                <strong> @ Coursera</strong>
+              </div>
+              <div class="certification">
+                <span>Structuring Machine Learning Projects</span>
+                <strong> @ Coursera</strong>
+              </div>
+              <div class="certification">
+                <span>Neural Networks and Deep Learning</span>
+                <strong> @ Coursera</strong>
+              </div>
+              <div class="certification">
+                <span>Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</span>
+                <strong> @ Coursera</strong>
               </div>
             </div>
             <div id="projects">
@@ -147,69 +221,6 @@
                 <small>using <em>PHP, MySQL, Javascript, HTML, CSS</em></small>
               </div>
             </div>
-            <div id="educations">
-              <h4>Education</h4>
-              <div class="education">
-                <strong>Bogazici University</strong>
-                <span class="ex-date">
-                  <em>Jan 2016 - Unfinished</em>
-                </span>
-                <medium>Computer Engineering M.Sc.</medium>
-              </div>
-              <div class="education">
-                <strong>Bogazici University</strong>
-                <span class="ex-date">
-                  <em>Sept 2010 - Jun 2014</em>
-                </span>
-                <medium>Computer Engineering B.Sc.</medium>
-              </div>
-              <div class="education">
-                <strong>Bogazici University</strong>
-                <span class="ex-date">
-                  <em>Sept 2009 - June 2010</em>
-                </span>
-                <medium>English Prep School</medium>
-              </div>
-            </div>
-            <div id="certifications" class="Certifications & Trainings">
-              <h4>Certifications</h4>
-              <div class="certification">
-                <span>Oracle Certified Professional</span>
-                <strong> @ Oracle</strong>
-              </div>
-              <div class="certification">
-                <span>Oracle Certified Associate</span>
-                <strong> @ Oracle</strong>
-              </div>
-              <div class="certification">
-                <span>Professional Scrum Master</span>
-                <strong> @ scrum.org</strong>
-              </div>
-              <div class="certification">
-                <span>ISTQB Certified Tester</span>
-                <strong> @ ISTQB</strong>
-              </div>
-              <div class="certification">
-                <span>Getting Started With Google Kubernetes</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Continuous Integration</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Structuring Machine Learning Projects</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Neural Networks and Deep Learning</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</span>
-                <strong> @ Coursera</strong>
-              </div>
-            </div>
             <div id="skills">
               <h4>Technical Skills</h4>
               <ul>
@@ -238,7 +249,7 @@
                 </ul>
               </ul>
               <ul>
-                Miscellaneous
+                Other
                 <ul>
                   <li>Docker, Maven, Jetty, Apache Ant</li>
                   <li>APEX, QT Designer</li>

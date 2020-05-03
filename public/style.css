@@ -69,7 +69,7 @@ h4 {
   margin: 15px 0;
 }
 
-.navigation>span, .download>span {
+.navigation>span, .misc-links>span {
   border-bottom: 1px solid lightgrey;
   margin: 10px;
   cursor:pointer;

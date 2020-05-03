@@ -4,8 +4,10 @@ links.forEach(link => {
         document.getElementById(link.attributes.href.value).scrollIntoView()
     })
 })
-
-document.querySelector(".download>span").addEventListener("click", function(e){
+document.querySelector('#contact').addEventListener('click', function(e){
+    window.open('mailto:emrahzc@gmail.com', 'email')
+})
+document.querySelector("#download").addEventListener("click", function(e){
     var source = document.getElementsByClassName("middlec")[0].children;
     let heights = Array.prototype.slice.call(source).map(element => element.clientHeight*0.71)
     canvase = new Array(heights.length)
@@ -71,12 +73,12 @@ let content = {
         },{
         name: 'Internet Banking Automation for Callcenter Agents',
         company: 'Yapi Kredi Bank (OBSS)',
-        content: 'integrated internet banking application with call center agent software via iframe messaging archiving  simplified call center operations',
+        content: 'provided call-center agents with new functionalities as well as making it easy to access existing features by embedding client-side internet banking application inside callcenter platform',
         tools: 'Java, Javascript, Spring, Hibernate, Oracle 12C'
         },{
         name: 'Batch Data Retrieval Processing',
         company: 'Yapi Kredi Bank (OBSS)',
-        content: 'diagnosed and resolved a redundancy in processing monthy batch data from KKB resulting in ~90% reduction in time and processing power',
+        content: 'idendified and resolved a redundancy issuse within the monthly KKB data retrieval batch reducing processing cost more than 90%',
         tools: 'Java, Spring, Hibernate, Oracle Database'
         },{
         name: 'SFA Mortgage Automation',
@@ -145,6 +147,26 @@ let content = {
         { school: 'Bogazici University', date: 'Jan 2016 - Ragequit', dept: 'Computer Engineering M.Sc.'},
         { school: 'Bogazici University', date: 'Sept 2010 - Jun 2014', dept: 'Computer Engineering B.Sc.'},
         { school: 'Bogazici University', date: 'Sept 2009 - June 2010', dept: 'English Prep School'}
+    ],
+    skills: [
+        { name: 'Programming',
+          items: ['Java, Spring, Hibernate, Swing, AWT, JAX/WS, CXF, JSP, JSF',
+            'Javascript, Node.js, Angular, React, JQuery, AJAX, D3.js, CSS, HTML, PHP, ASP',
+            'Python, C/C++, Bash, Perl, Prolog']},
+        { name: 'Database',
+          items: ['Oracle 11g, 12c, Pl/SQL',
+            'MySQL, MongoDB, MSSQL, PostgreSQL, SQLite, Percona',
+            'ActiveMQ, Redis, Ab Initio']},
+        { name: 'CI/CD',
+          items: ['JUnit, Mockito, Robot Framework, Selenium',
+            'Bamboo, Travis CI, Tomcat',
+            'Jira, Bitbucket, Confluence',
+            'Git, SVN, ClearCase']},
+        { name: 'Miscellaneous',
+          items: ['Docker, Maven, Jetty, Apache Ant',
+            'APEX, QT Designer',
+            'SOAP, REST, UniMRCP, RTMP, RTSP, Socket.io, TCP, UDP',
+            'Oracle Solaris, AWS Workspace, Citrix Client']}
     ]
 }
 function fillTemplate( templateid, data ){
@@ -154,9 +176,23 @@ function fillTemplate( templateid, data ){
         });
 }
 
+function fillTemplateList( templateid, data ){
+    let html = document.getElementById( templateid ).innerHTML.replace(/%(\w*)%/g,
+        function( _, key ){
+            if(key === 'list'){
+                return data.items.map(item=> `<li>${item}</li>`).join('')
+            }
+        return data.hasOwnProperty( key ) ? data[ key ] : "";
+        });
+    return html;
+}
+
 function fillTemplates( node){
     content[node].forEach(element=>{
-        document.getElementById(node).innerHTML += fillTemplate(node + '-template', element)
+        if(element.items)
+            document.getElementById(node).innerHTML += fillTemplateList(node + '-template', element)
+        else
+            document.getElementById(node).innerHTML += fillTemplate(node + '-template', element)       
     })
 }
 

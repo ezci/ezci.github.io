@@ -27,8 +27,9 @@
               <a href="https://github.com/emrhzc"><img src="public/github.png" /></a>
               <a href="https://stackoverflow.com/users/1123532/emrhzc"><img src="public/so.png" /></a>
             </div>
-            <div class="download">
-              <span>download pdf</span>
+            <div class="misc-links">
+              <span id='download'>download pdf</span>
+              <span id="contact">emrahzc@gmail.com</span>
             </div>
           </div>
           <div class="middlec">
@@ -87,40 +88,14 @@
             </div>
             <div id="skills">
               <h4>Technical Skills</h4>
-              <ul>
-                Programming
+              <template id="skills-template">
                 <ul>
-                  <li>Java, Spring, Hibernate, Swing, AWT, JAX/WS, CXF, JSP, JSF</li>
-                  <li>Javascript, Node.js, Angular, React, JQuery, AJAX, D3.js, CSS, HTML, PHP, ASP</li>
-                  <li>Python, C/C++, Bash, Perl, Prolog</li>
+                  <strong>%name%</strong>
+                  <ul>
+                    %list%
+                  </ul>
                 </ul>
-              </ul>
-              <ul>
-                Database
-                <ul>
-                  <li>Oracle 11g, 12c, Pl/SQL</li>
-                  <li>MySQL, MongoDB, MSSQL, PostgreSQL, SQLite, Percona</li>
-                  <li>ActiveMQ, Redis, Ab Initio</li>
-                </ul>
-              </ul>
-              <ul>
-                CI/CD
-                <ul>
-                  <li>JUnit, Mockito, Robot Framework, Selenium</li>
-                  <li>Bamboo, Travis CI, Tomcat</li>
-                  <li>Jira, Bitbucket, Confluence</li>
-                  <li>Git, SVN, ClearCase</li>
-                </ul>
-              </ul>
-              <ul>
-                Miscellaneous
-                <ul>
-                  <li>Docker, Maven, Jetty, Apache Ant</li>
-                  <li>APEX, QT Designer</li>
-                  <li>SOAP, REST, UniMRCP, RTMP, RTSP, Socket.io, TCP, UDP</li>
-                  <li>Oracle Solaris, AWS Workspace, Citrix Client</li>
-                </ul>
-              </ul>
+            </template>
             </div>
             <div id="pprojects">
               <h4>Personal Projects</h4>

@@ -15,7 +15,7 @@
             <span href="educations">Education</span>
             <span href="certifications">Certifications</span>
             <span href="skills">Skills</span>
-            <span href="p-projects">Personal Projects</span>
+            <span href="pprojects">Personal Projects</span>
         </div>
           <div class="leftc">
             <div class="p-img">
@@ -38,188 +38,52 @@
             </div>
             <div id="experiences">
               <h4>Work Experience</h4>
-              <div class="experience">
-                  <span class="block1">
-                    <strong>Cimsolutions B.V.</strong>
-                  </span>
-                  <span class="ex-date">
-                    <em>Oct 2017 - Feb 2020</em>
+              <template id="experiences-template">
+                <div class="experience">
+                    <span class="block1">
+                      <strong>%company%</strong>
+                      </span>
+                    <span class="ex-date">
+                      <em>%date%</em>
                     </span>
-                  <span class="ex-title">
-                    <small>Development Consultant</small>
-                  </span>
-              </div>
-             <div class="experience">
-                  <span class="block1">
-                    <strong>Woonveilig B.V.</strong>
-                   </span>
-                  <span class="ex-date">
-                    <em>Nov 2016 - Oct 2017</em>
-                  </span>
-                  <span class="ex-title">
-                    <small>Java/IoT Developer</small>
-                  </span>
-              </div>
-              <div class="experience">
-                  <span class="block1">
-                    <strong>OBSS</strong>
+                    <span class="ex-title">
+                      <small>%date%</small>
                     </span>
-                  <span class="ex-date">
-                    <em>Sept 2014 - Sept 2016 </em>
-                  </span>
-                  <span class="ex-title">
-                    <small>Development Consultant</small>
-                  </span>
-              </div>
-              <div class="experience">
-                  <span class="block1">
-                    <strong>Turkcell Technology</strong>
-                  </span>
-                  <span class="ex-date">
-                    <em>July 2013 - Sept 2014</em>
-                    </span>
-                  <span class="ex-title">
-                    <small>DWH/Backend Developer</small>
-                  </span>
-              </div>
-              <div class="experience">
-                  <span class="block1">
-                    <strong>Bogazici University</strong>
-                    </span>
-                  <span class="ex-date">
-                    <em>Jan 2013 - May 2013</em>
-                  </span>
-                  <span class="ex-title">
-                    <small>Web Developer</small>
-                  </span>
-              </div>
+                </div>
+              </template>
             </div>
             <div id="educations">
-              <h4>Education</h4>
-              <div class="education">
-                <span class="block1">
-                  <strong>Bogazici University</strong>
-                </span>
-                <span class="ex-date">
-                  <em>Jan 2016 - Unfinished</em>
-                </span>
-                <medium>Computer Engineering M.Sc.</medium>
-              </div>
-              <div class="education">
-                <span class="block1">
-                  <strong>Bogazici University</strong>
-                </span>
-                <span class="ex-date">
-                  <em>Sept 2010 - Jun 2014</em>
-                </span>
-                <medium>Computer Engineering B.Sc.</medium>
-              </div>
-              <div class="education">
-                <span class="block1">
-                  <strong>Bogazici University</strong>
-                </span>
-                <span class="ex-date">
-                  <em>Sept 2009 - June 2010</em>
-                </span>
-                <medium>English Prep School</medium>
-              </div>
+               <h4>Education</h4>
+               <template id="educations-template">
+                  <div class="education">
+                    <span class="block1">
+                      <strong>%school%</strong>
+                    </span>
+                    <span class="ex-date">
+                      <em>%date%</em>
+                    </span>
+                    <medium>%dept%</medium>
+                  </div>
+               </template>
             </div>            
             <div id="certifications" class="Certifications & Trainings">
               <h4>Certifications</h4>
-              <div class="certification">
-                <span>Oracle Certified Professional</span>
-                <strong> @ Oracle</strong>
-              </div>
-              <div class="certification">
-                <span>Oracle Certified Associate</span>
-                <strong> @ Oracle</strong>
-              </div>
-              <div class="certification">
-                <span>Professional Scrum Master</span>
-                <strong> @ scrum.org</strong>
-              </div>
-              <div class="certification">
-                <span>ISTQB Certified Tester</span>
-                <strong> @ ISTQB</strong>
-              </div>
-              <div class="certification">
-                <span>Getting Started With Google Kubernetes</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Continuous Integration</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Structuring Machine Learning Projects</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Neural Networks and Deep Learning</span>
-                <strong> @ Coursera</strong>
-              </div>
-              <div class="certification">
-                <span>Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</span>
-                <strong> @ Coursera</strong>
-              </div>
+              <template id="certifications-template">
+                <div class="certification">
+                  <span>%name%</span>
+                  <strong> @%by%</strong>
+                </div>
+              </template>
             </div>
             <div id="projects">
               <h4>Projects</h4>
+              <template id="projects-template">
                 <div class="project">
-                  <strong>Groupware Integration and Testing Automation </strong> -Belastingdienst (Cimsolutions)
-                  <br><small>Integrated customs application retrieval system within the IBM groupware with the central taxation system, as well as authoring smoke tests and generating test data with Robot Framework</small>
-                  <small>using <em>Lotus Notes, Java, JAX-WS, Robot Framework, Selenium</em></small>
-              </div>
-              <div class="project">
-                <strong>Visualization for Real-time Measurements of a Voyager Vehicle</strong> -Clean2Antarctica (Cimsolutions)
-                <br><small>integrated real-time measurements of a voyager vehicle traversing Antarctica for sustainability awareness and visualized with web based charts</small>
-                <small>using <em>Spring Boot, Angular, D3.js</em></small>
-              </div>
-              <div class="project">
-                <strong>Wafer Production Control Screen Renovation </strong> -ASM International (Cimsolutions)
-                  <br><small>redesigned ~600 screens of wafer production machines following installation of a lookandfeel plugin and separating the controller layer allowing dynamic UI plugin installation as well as creating new screens for authorization</small>
-                  <small>using <em>Java AWT/Swing, lookandfeel</em></small>
-              </div>
-              <div class="project">
-                <strong>Internet of Things for Smart Home & Security</strong> -Egardia
-                <br><small>Developed 40+ small features in a scrum team for an IoT platform including maintenance of virtualized host and linux nodes with KVM/QEMU, batch jobs for regular operations, real-time bash scripts for audio/video conversion for surveillance, microservices for control panel applications, building NSF4 repositories for storage, adding new features to the web application and building a caching mechanism for text-to-speech engine resulting in decreased computation and license use, system failures and faster alarm scenarios</small>
-                <small>using <em>Netty, Spring Framework, JSF, Liferay, Hibernate,  Percona MySQL, Nuance TTS, UniMRCP, Asterix PBX, Bash Scripting, SoX, NSF4, KVM/QEMU, Java Quartz, ActiveMQ, Tomcat, systemd, Mockito... </em></small>
-              </div>
-              <div class="project">
-                <strong>Internet Banking Automation for Callcenter Agents</strong> -Yapi Kredi Bank (OBSS)
-                <br><small>integrated internet banking application with call center agent software via iframe messaging archiving  simplified call center operations</small>
-                <small>using <em>Java, Javascript, Spring, Hibernate, Oracle 12C</em></small>
-              </div>
-              <div class="project">
-                <strong>Batch Data Retrieval Processing</strong> -Yapi Kredi Bank (OBSS)
-                <br><small>diagnosed and resolved a redundancy in processing monthy batch data from KKB resulting in ~90% reduction in time and processing power</small>
-                <small>using <em>Java, Spring, Hibernate, Oracle Database</em></small>
-              </div>
-              <div class="project">
-                <strong>SFA Mortgage Automation</strong> -Yapi Kredi Bank (OBSS)
-                <br><small>designed and developed screens for expertise inquiry for mortgage loans as well as integrating with third-party expertise agency.</small>
-                <small>using <em>Java, Spring, Hibernate, Javascript, Oracle, Maven, JAX-WS</em></small>
-              </div>
-              <div class="project">
-                <strong>Data Gathering for Loaning Assessment</strong> -Yapi Kredi Bank (OBSS)
-                <br><small>issued more than 50 features and bugfixes for personal loaning Assessment inquiry involving collecting data from various third-party agencies and other banking modules and developing screens for inhouse assessment staff</small>
-                <small>using <em>Java, Spring, Hibernate, Oracle, Maven, JAX-WS, CXF</em></small>
-              </div>
-              <div class="project">
-                <strong>Bidding Tool for Commercial Sales</strong> - Turkcell Technology
-                <br><small>developed a intranet solution for commercial sales representitives to calculate customer-specific bundle offers</small>
-                <small>using <em>Java, Spring, Hibernate, Oracle, LDAP</em></small>
-              </div>
-              <div class="project">
-                <strong>ETL for Financial Analytics </strong> - Turkcell Technology
-                <br><small>designed and developed dozens of ETL jobs to serve financial analytics needs</small>
-                <small>using <em>Ab Initio, ODI, Oracle Pl/SQL</em></small>
-              </div>
-              <div class="project">
-                <strong>Issue Tracking Application for the University</strong> -Bogazici University
-                <br><small>designed and developed a new generation issue tracking to create, assign and follow issues of dynamically defined types to be used by all university institutes</small>
-                <small>using <em>PHP, MySQL, Javascript, HTML, CSS</em></small>
-              </div>
+                  <strong>%name%</strong> - %company%
+                  <br><small>%content%</small>
+                  <br><small><strong>tools: </strong><em>%tools%</em></small>
+                </div>
+            </template>
             </div>
             <div id="skills">
               <h4>Technical Skills</h4>
@@ -249,80 +113,23 @@
                 </ul>
               </ul>
               <ul>
-                Other
+                Miscellaneous
                 <ul>
                   <li>Docker, Maven, Jetty, Apache Ant</li>
                   <li>APEX, QT Designer</li>
                   <li>SOAP, REST, UniMRCP, RTMP, RTSP, Socket.io, TCP, UDP</li>
+                  <li>Oracle Solaris, AWS Workspace, Citrix Client</li>
                 </ul>
               </ul>
             </div>
-            <div id="p-projects">
+            <div id="pprojects">
               <h4>Personal Projects</h4>
-              <div class="project">
-                <strong>robot framework test generator</strong>
-                <small>chrome extension tool to capture and run browser events allowing to export as Robot Framework test case as well as JSON and HTML</small>
-              </div>
-              <div class="project">
-                <strong>business model canvas</strong>
-                <small>web based business canvas editor</small>
-              </div>
-              <div class="project">
-                <strong>genre visualisation</strong>
-                <small>web based genre extraction and visualisation app based on Spotify Data</small>
-              </div>
-              <div class="project">
-                <strong>vnc-pack</strong>
-                <small>docker based solution for managing scalable virtual desktop screens</small>
-              </div>
-              <div class="project">
-                <strong>name generator</strong>
-                <small>web based word completion app with parametrized prefix and postfix phrases</small>
-              </div>
-              <div class="project">
-                <strong>logout master</strong>
-                <small>chrome extension tool to log out from popular social media and news sites</small>
-              </div>
-              <div class="project">
-                <strong>screen mirror</strong>
-                <small>chrome extension tool to flip or rotate browser content</small>
-              </div>
-              <div class="project">
-                <strong>angular rename</strong>
-                <small>npm package to change component names with all references</small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
-              <div class="project">
-                <strong></strong>
-                <small></small>
-              </div>
+              <template id="pprojects-template">
+                <div class="project">
+                  <strong>%name%</strong>
+                  <small>%content%</small>
+                </div>
+              </template>
             </div>
           </div>
     </div>

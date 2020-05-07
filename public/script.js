@@ -119,6 +119,10 @@ let content = {
         { name: 'Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization', by: 'Coursera'}
     ],
     pprojects: [
+        { name: 'covid-19 metrics tracker', 
+          content: 'scraper + react app to track & visualize covid-19 cases and deaths per country',
+          url: 'https://github.com/emrhzc/cchart'
+        }, 
         { name: 'robot framework test generator', 
           content: 'chrome extension tool to capture and run browser events allowing to export as Robot Framework test case as well as JSON and HTML',
           url: 'https://github.com/emrhzc/xcapture'

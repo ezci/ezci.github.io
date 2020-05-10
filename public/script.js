@@ -120,7 +120,7 @@ let content = {
     ],
     pprojects: [
         { name: 'covid-19 metrics tracker', 
-          content: 'scraper + react app to track & visualize covid-19 cases and deaths per country',
+          content: 'scraper + react app to visualize covid-19 stats',
           url: 'https://github.com/emrhzc/cchart'
         }, 
         { name: 'namegen', 

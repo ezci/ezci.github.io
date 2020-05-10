@@ -121,24 +121,24 @@ let content = {
     pprojects: [
         { name: 'covid-19 metrics tracker', 
           content: 'scraper + react app to visualize covid-19 stats',
-          url: 'https://github.com/emrhzc/cchart'
+          url: 'https://github.com/surreq/cchart'
         }, 
         { name: 'namegen', 
           content: 'web based name generator app with keyword options',
-          url: 'https://github.com/emrhzc/name-generator'}, 
+          url: 'https://github.com/surreq/name-generator'}, 
         { name: 'robot framework test generator', 
           content: 'chrome extension tool to capture and run browser events, export as Robot Framework test case as well as JSON for storage and as HTML for easy access',
-          url: 'https://github.com/emrhzc/xcapture'
+          url: 'https://github.com/surreq/xcapture'
         }, 
         { name: 'business model canvas', 
           content: 'web based app for creating business models ',
-            url: 'https://emrhzc.github.io/businesss-model-canvas/'}, 
+            url: 'https://surreq.github.io/businesss-model-canvas/'}, 
         { name: 'genre visualisation', 
           content: 'web based genre extraction and visualisation app based on Spotify Data',
           url: 'https://xgenre.herokuapp.com'}, 
         { name: 'vnc-pack', 
           content: 'docker based solution for managing scalable virtual desktop screens',
-          url:'https://github.com/emrhzc/vnc-pack'}, 
+          url:'https://github.com/surreq/vnc-pack'}, 
         { name: 'logout master', 
           content: 'chrome extension tool to log out from popular social media and news sites',
           url: 'https://chrome.google.com/webstore/detail/logout-master/npdimakhiplnplkpbkpnpbdnphcclcef?hl=en'}, 

@@ -123,12 +123,15 @@ let content = {
           content: 'scraper + react app to track & visualize covid-19 cases and deaths per country',
           url: 'https://github.com/emrhzc/cchart'
         }, 
+        { name: 'namegen', 
+          content: 'web based name generator app with keyword options',
+          url: 'https://github.com/emrhzc/name-generator'}, 
         { name: 'robot framework test generator', 
-          content: 'chrome extension tool to capture and run browser events allowing to export as Robot Framework test case as well as JSON and HTML',
+          content: 'chrome extension tool to capture and run browser events, export as Robot Framework test case as well as JSON for storage and as HTML for easy access',
           url: 'https://github.com/emrhzc/xcapture'
         }, 
         { name: 'business model canvas', 
-          content: 'web based business canvas editor',
+          content: 'web based app for creating business models ',
             url: 'https://emrhzc.github.io/businesss-model-canvas/'}, 
         { name: 'genre visualisation', 
           content: 'web based genre extraction and visualisation app based on Spotify Data',
@@ -136,9 +139,6 @@ let content = {
         { name: 'vnc-pack', 
           content: 'docker based solution for managing scalable virtual desktop screens',
           url:'https://github.com/emrhzc/vnc-pack'}, 
-        { name: 'name generator', 
-          content: 'web based word completion app with parametrized prefix and postfix phrases',
-          url: 'https://github.com/emrhzc/name-generator'}, 
         { name: 'logout master', 
           content: 'chrome extension tool to log out from popular social media and news sites',
           url: 'https://chrome.google.com/webstore/detail/logout-master/npdimakhiplnplkpbkpnpbdnphcclcef?hl=en'}, 
@@ -157,7 +157,7 @@ let content = {
         { company: 'Bogazici University',   date: 'Jan 2013 - May 2013', title: 'Web Developer'}
     ],
     educations: [
-        { school: 'Bogazici University', date: 'Jan 2016 - Ragequit', dept: 'Computer Engineering M.Sc.'},
+        { school: 'Bogazici University', date: 'Jan 2016 - ...', dept: 'Computer Engineering M.Sc.'},
         { school: 'Bogazici University', date: 'Sept 2010 - Jun 2014', dept: 'Computer Engineering B.Sc.'},
         { school: 'Bogazici University', date: 'Sept 2009 - June 2010', dept: 'English Prep School'}
     ],

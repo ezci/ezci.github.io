@@ -13,7 +13,7 @@
     "url": "git+https://github.com/emrhzc/name-generator.git"
   },
   "dependencies": {
-    "express": "4.17.1"
+    "express": "4.17.3"
   },
   "author": "emrhzc",
   "license": "ISC",
